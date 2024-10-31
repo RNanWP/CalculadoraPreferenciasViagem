@@ -100,12 +100,13 @@
             btnConfirmarDestino.TabIndex = 5;
             btnConfirmarDestino.Text = "Confirmar";
             btnConfirmarDestino.UseVisualStyleBackColor = true;
+            btnConfirmarDestino.Click += btnConfirmarDestino_Click;
             // 
             // btnVoltar
             // 
-            btnVoltar.Location = new Point(299, 311);
+            btnVoltar.Location = new Point(299, 302);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(61, 25);
+            btnVoltar.Size = new Size(61, 34);
             btnVoltar.TabIndex = 6;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;

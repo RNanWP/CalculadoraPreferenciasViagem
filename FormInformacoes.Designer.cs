@@ -35,6 +35,7 @@
             btnConfirmarInformacoes = new Button();
             txtEmail = new TextBox();
             txtTelefone = new TextBox();
+            btnVoltar = new Button();
             SuspendLayout();
             // 
             // lblNome
@@ -79,6 +80,7 @@
             btnConfirmarInformacoes.TabIndex = 0;
             btnConfirmarInformacoes.Text = "Confirmar";
             btnConfirmarInformacoes.UseVisualStyleBackColor = true;
+            btnConfirmarInformacoes.Click += btnConfirmarInformacoes_Click;
             // 
             // txtEmail
             // 
@@ -94,11 +96,22 @@
             txtTelefone.Size = new Size(125, 27);
             txtTelefone.TabIndex = 9;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(387, 238);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(61, 34);
+            btnVoltar.TabIndex = 10;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // FormInformacoes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(460, 284);
+            Controls.Add(btnVoltar);
             Controls.Add(txtTelefone);
             Controls.Add(txtEmail);
             Controls.Add(btnConfirmarInformacoes);
@@ -124,5 +137,6 @@
         private Button btnConfirmarInformacoes;
         private TextBox txtEmail;
         private TextBox txtTelefone;
+        private Button btnVoltar;
     }
 }

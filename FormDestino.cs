@@ -23,5 +23,18 @@ namespace Calculadora_de_Preferências_de_Viagem
             formMain.Show();
             this.Close();
         }
+
+        private void btnConfirmarDestino_Click(object sender, EventArgs e)
+        {
+            string destinoSelecionado = "";
+            if (rbPraia.Checked)
+                destinoSelecionado = "Praia";
+            else if (rbMontanha.Checked)
+                destinoSelecionado = "Montanha";
+            else if (rbCidade.Checked)
+                destinoSelecionado = "Cidade";
+
+            MessageBox.Show($"Destino selecionado: {destinoSelecionado}");
+        }
     }
 }

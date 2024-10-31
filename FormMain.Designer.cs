@@ -52,6 +52,7 @@
             btnTransporte.TabIndex = 1;
             btnTransporte.Text = "Transporte";
             btnTransporte.UseVisualStyleBackColor = true;
+            btnTransporte.Click += btnTransporte_Click;
             // 
             // btnInformacoes
             // 
@@ -61,6 +62,7 @@
             btnInformacoes.TabIndex = 2;
             btnInformacoes.Text = "Informações Pessoais";
             btnInformacoes.UseVisualStyleBackColor = true;
+            btnInformacoes.Click += btnInformacoes_Click;
             // 
             // btnCalculoDeconto
             // 
@@ -70,6 +72,7 @@
             btnCalculoDeconto.TabIndex = 3;
             btnCalculoDeconto.Text = "Cálculo de Desconto";
             btnCalculoDeconto.UseVisualStyleBackColor = true;
+            btnCalculoDeconto.Click += btnCalculoDeconto_Click;
             // 
             // FormMain
             // 
@@ -81,7 +84,7 @@
             Controls.Add(btnTransporte);
             Controls.Add(btnDestino);
             Name = "FormMain";
-            Text = "Form5";
+            Text = "FormMain";
             ResumeLayout(false);
         }
 

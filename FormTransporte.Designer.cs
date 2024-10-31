@@ -35,6 +35,7 @@
             cbTrem = new CheckBox();
             btnConfirmarTransporte = new Button();
             txtTransporteResultado = new TextBox();
+            btnVoltar = new Button();
             gbTransporte.SuspendLayout();
             SuspendLayout();
             // 
@@ -97,6 +98,7 @@
             btnConfirmarTransporte.TabIndex = 4;
             btnConfirmarTransporte.Text = "Confirmar";
             btnConfirmarTransporte.UseVisualStyleBackColor = true;
+            btnConfirmarTransporte.Click += btnConfirmarTransporte_Click;
             // 
             // txtTransporteResultado
             // 
@@ -106,24 +108,39 @@
             txtTransporteResultado.TabIndex = 5;
             txtTransporteResultado.Text = "Exibe os transportes selecionados";
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(359, 230);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(61, 34);
+            btnVoltar.TabIndex = 7;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // FormTransporte
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 276);
+            Controls.Add(btnVoltar);
             Controls.Add(txtTransporteResultado);
             Controls.Add(btnConfirmarTransporte);
             Controls.Add(gbTransporte);
             Controls.Add(lblTransporte);
             Name = "FormTransporte";
             Text = "Form3";
-            Load += this.FormTransporte_Load;
+            Load += FormTransporte_Load;
             gbTransporte.ResumeLayout(false);
             gbTransporte.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
+        private void FormTransporte_Load(object sender, EventArgs e)
+        {
+            // Coloque aqui qualquer código que você deseja executar quando o formulário carregar.
+        }
         #endregion
 
         private Label lblTransporte;
@@ -133,5 +150,6 @@
         private CheckBox cbTrem;
         private Button btnConfirmarTransporte;
         private TextBox txtTransporteResultado;
+        private Button btnVoltar;
     }
 }

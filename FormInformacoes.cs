@@ -16,5 +16,21 @@ namespace Calculadora_de_Preferências_de_Viagem
         {
             InitializeComponent();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            formMain.Show();
+            this.Close();
+        }
+
+        private void btnConfirmarInformacoes_Click(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string email = txtEmail.Text;
+            string telefone = txtTelefone.Text;
+
+            MessageBox.Show($"Nome: {nome}\nE-mail: {email}\nTelefone: {telefone}");
+        }
     }
 }
